@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\FollowController;
+use App\Http\Controllers\UserAddController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\SubscribeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +22,13 @@ Route::post('invoices',[InvoiceController::class,'store']);
 
 
 Route::post('invoices/{invoices}',[InvoiceController::class,'update']);
+
+
+Route::post('useradd',[UserAddController::class,'store']);
+
+
+Route::post('userupdate/{useradd}',[UserAddController::class,'update']);
+
+
+
+
