@@ -28,9 +28,12 @@ Follow these steps to set up and run the project locally.
 
 ### Installation
    
-composer install
+[composer install](https://getcomposer.org/)
+
 npm install
+
 php artisan migrate
+
 php artisan serve
 
 
